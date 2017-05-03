@@ -7,6 +7,9 @@ import java.sql.Statement;
 
 public class Test {
     public static void main(String[] args) {
+        XMLtoDB ob = new XMLtoDB();
+        ob.at();
+
         try {
 
             Class.forName("com.vedernikova.Test");
@@ -26,7 +29,7 @@ public class Test {
             System.out.println("# - Statement Created");
 
 
-            stmt1.executeUpdate("INSERT INTO MyDB " + "VALUES (2, '11/10/2016')");//додаєм інфу в табл
+            stmt1.executeUpdate("INSERT INTO MyDB " + "VALUES (2, 'nhh')");//додаєм інфу в табл
 
             ResultSet rs = stmt.executeQuery("SELECT Data FROM MyDB;"); ///дістаєм інфу з таблиці
 //            stmt.executeQuery("DELETE FROM MyDB\n" +
@@ -49,5 +52,5 @@ public class Test {
         } catch (Exception ex) {
             System.out.println("Error : "+ex);
         }
-    }
+   }
 }
