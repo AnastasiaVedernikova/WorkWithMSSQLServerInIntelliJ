@@ -28,7 +28,7 @@
     <database id="9" parent="1" name="MyDB">
       <ObjectId>7</ObjectId>
     </database>
-    <database id="10" parent="1" name="vedernikova">
+    <database id="10" parent="1" name="Vedernikova">
       <ObjectId>8</ObjectId>
     </database>
     <database id="11" parent="1" name="Workers">
@@ -45,7 +45,7 @@
     </database>
     <schema id="15" parent="2" name="dbo">
       <ObjectId>1</ObjectId>
-      <IntrospectionTimestamp>2017-04-14.11:23:14.720</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2017-05-14.14:31:50.663</IntrospectionTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -98,26 +98,87 @@
     <table id="30" parent="15" name="MyDB">
       <ObjectId>245575913</ObjectId>
       <CreatedTimestamp>2017-04-10.13:41:05.183</CreatedTimestamp>
-      <ModifiedTimestamp>2017-04-10.13:41:05.240</ModifiedTimestamp>
+      <ModifiedTimestamp>2017-05-04.19:08:39.943</ModifiedTimestamp>
     </table>
     <table id="31" parent="15" name="Street">
       <ObjectId>341576255</ObjectId>
       <CreatedTimestamp>2017-04-10.13:41:05.233</CreatedTimestamp>
       <ModifiedTimestamp>2017-04-10.13:41:05.243</ModifiedTimestamp>
     </table>
-    <column id="32" parent="28" name="City">
+    <table id="32" parent="15" name="sysdiagrams">
+      <ObjectId>581577110</ObjectId>
+      <CreatedTimestamp>2017-04-21.13:19:50.020</CreatedTimestamp>
+      <ModifiedTimestamp>2017-04-21.13:19:50.020</ModifiedTimestamp>
+    </table>
+    <routine id="33" parent="15" name="fn_diagramobjects">
+      <ObjectId>725577623</ObjectId>
+      <CreatedTimestamp>2017-04-21.13:19:50.363</CreatedTimestamp>
+      <ModifiedTimestamp>2017-04-21.13:19:50.363</ModifiedTimestamp>
+      <RoutineKind>function</RoutineKind>
+      <RoutineType>scalar-fun</RoutineType>
+    </routine>
+    <routine id="34" parent="15" name="sp_alterdiagram">
+      <ObjectId>693577509</ObjectId>
+      <CreatedTimestamp>2017-04-21.13:19:50.323</CreatedTimestamp>
+      <ModifiedTimestamp>2017-04-21.13:19:50.323</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="35" parent="15" name="sp_creatediagram">
+      <ObjectId>661577395</ObjectId>
+      <CreatedTimestamp>2017-04-21.13:19:50.277</CreatedTimestamp>
+      <ModifiedTimestamp>2017-04-21.13:19:50.277</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="36" parent="15" name="sp_dropdiagram">
+      <ObjectId>709577566</ObjectId>
+      <CreatedTimestamp>2017-04-21.13:19:50.337</CreatedTimestamp>
+      <ModifiedTimestamp>2017-04-21.13:19:50.337</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="37" parent="15" name="sp_helpdiagramdefinition">
+      <ObjectId>645577338</ObjectId>
+      <CreatedTimestamp>2017-04-21.13:19:50.227</CreatedTimestamp>
+      <ModifiedTimestamp>2017-04-21.13:19:50.227</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="38" parent="15" name="sp_helpdiagrams">
+      <ObjectId>629577281</ObjectId>
+      <CreatedTimestamp>2017-04-21.13:19:50.143</CreatedTimestamp>
+      <ModifiedTimestamp>2017-04-21.13:19:50.143</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="39" parent="15" name="sp_renamediagram">
+      <ObjectId>677577452</ObjectId>
+      <CreatedTimestamp>2017-04-21.13:19:50.293</CreatedTimestamp>
+      <ModifiedTimestamp>2017-04-21.13:19:50.293</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="40" parent="15" name="sp_upgraddiagrams">
+      <ObjectId>565577053</ObjectId>
+      <CreatedTimestamp>2017-04-21.13:19:49.850</CreatedTimestamp>
+      <ModifiedTimestamp>2017-04-21.13:19:49.850</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <column id="41" parent="28" name="City">
       <Position>1</Position>
       <DataType>nvarchar(25)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="33" parent="28" name="PK__City__AEC4A06C1ACF30AA">
+    <index id="42" parent="28" name="PK__City__AEC4A06C1ACF30AA">
       <Position>1</Position>
       <NameSurrogate>1</NameSurrogate>
       <ColNames>City</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <key id="34" parent="28" name="PK__City__AEC4A06C1ACF30AA">
+    <key id="43" parent="28" name="PK__City__AEC4A06C1ACF30AA">
       <ObjectId>325576198</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2017-04-10.13:41:05.233</CreatedTimestamp>
@@ -126,60 +187,60 @@
       <UnderlyingIndexName>PK__City__AEC4A06C1ACF30AA</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="35" parent="29" name="IDClient">
+    <column id="44" parent="29" name="IDClient">
       <Position>1</Position>
       <DataType>int|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="36" parent="29" name="Name">
+    <column id="45" parent="29" name="Name">
       <Position>2</Position>
       <DataType>nvarchar(25)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="37" parent="29" name="Surname">
+    <column id="46" parent="29" name="Surname">
       <Position>3</Position>
       <DataType>nvarchar(25)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="38" parent="29" name="Middlename">
+    <column id="47" parent="29" name="Middlename">
       <Position>4</Position>
       <DataType>nvarchar(25)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="39" parent="29" name="City">
+    <column id="48" parent="29" name="City">
       <Position>5</Position>
       <DataType>nvarchar(25)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="40" parent="29" name="Street">
+    <column id="49" parent="29" name="Street">
       <Position>6</Position>
       <DataType>nvarchar(25)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="41" parent="29" name="NumOfBuilding">
+    <column id="50" parent="29" name="NumOfBuilding">
       <Position>7</Position>
       <DataType>nvarchar(25)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="42" parent="29" name="NumOfFlat">
+    <column id="51" parent="29" name="NumOfFlat">
       <Position>8</Position>
       <DataType>nvarchar(25)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="43" parent="29" name="PhoneNumber">
+    <column id="52" parent="29" name="PhoneNumber">
       <Position>9</Position>
       <DataType>nvarchar(25)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="44" parent="29" name="PK__Client__CDECAB2CB249A8C3">
+    <index id="53" parent="29" name="PK__Client__CDECAB2CB249A8C3">
       <Position>1</Position>
       <NameSurrogate>1</NameSurrogate>
       <ColNames>IDClient</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <key id="45" parent="29" name="PK__Client__CDECAB2CB249A8C3">
+    <key id="54" parent="29" name="PK__Client__CDECAB2CB249A8C3">
       <ObjectId>293576084</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2017-04-10.13:41:05.230</CreatedTimestamp>
@@ -188,7 +249,7 @@
       <UnderlyingIndexName>PK__Client__CDECAB2CB249A8C3</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="46" parent="29" name="FK__Client__City__173876EA">
+    <foreign-key id="55" parent="29" name="FK__Client__City__173876EA">
       <ObjectId>389576426</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2017-04-10.13:41:05.240</CreatedTimestamp>
@@ -197,7 +258,7 @@
       <RefTableName>City</RefTableName>
       <RefColNames>City</RefColNames>
     </foreign-key>
-    <foreign-key id="47" parent="29" name="FK__Client__Street__182C9B23">
+    <foreign-key id="56" parent="29" name="FK__Client__Street__182C9B23">
       <ObjectId>405576483</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2017-04-10.13:41:05.243</CreatedTimestamp>
@@ -206,7 +267,7 @@
       <RefTableName>Street</RefTableName>
       <RefColNames>Street</RefColNames>
     </foreign-key>
-    <check id="48" parent="29" name="CK__Client__PhoneNum__1920BF5C">
+    <check id="57" parent="29" name="CK__Client__PhoneNum__1920BF5C">
       <ObjectId>421576540</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2017-04-10.13:41:05.360</CreatedTimestamp>
@@ -214,29 +275,37 @@
       <ColNames>PhoneNumber</ColNames>
       <Predicate>[PhoneNumber] like &apos;[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9]&apos;</Predicate>
     </check>
-    <column id="49" parent="30" name="ID">
+    <column id="58" parent="30" name="ID">
       <Position>1</Position>
       <DataType>int|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="50" parent="30" name="IDClient">
+    <column id="59" parent="30" name="IDClient">
       <Position>2</Position>
       <DataType>int|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="51" parent="30" name="Data">
+    <column id="60" parent="30" name="Data">
       <Position>3</Position>
       <DataType>nvarchar(max)|0</DataType>
     </column>
-    <index id="52" parent="30" name="PK__MyDB__3214EC27FE72EA8F">
+    <column id="61" parent="30" name="IDProject">
+      <Position>4</Position>
+      <DataType>int|0</DataType>
+    </column>
+    <column id="62" parent="30" name="Result">
+      <Position>5</Position>
+      <DataType>nvarchar(max)|0</DataType>
+    </column>
+    <index id="63" parent="30" name="PK__MyDB__3214EC27FE72EA8F">
       <Position>1</Position>
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <key id="53" parent="30" name="PK__MyDB__3214EC27FE72EA8F">
+    <key id="64" parent="30" name="PK__MyDB__3214EC27FE72EA8F">
       <ObjectId>261575970</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2017-04-10.13:41:05.223</CreatedTimestamp>
@@ -245,7 +314,7 @@
       <UnderlyingIndexName>PK__MyDB__3214EC27FE72EA8F</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="54" parent="30" name="FK__MyDB__IDClient__164452B1">
+    <foreign-key id="65" parent="30" name="FK__MyDB__IDClient__164452B1">
       <ObjectId>373576369</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2017-04-10.13:41:05.240</CreatedTimestamp>
@@ -254,19 +323,19 @@
       <RefTableName>Client</RefTableName>
       <RefColNames>IDClient</RefColNames>
     </foreign-key>
-    <column id="55" parent="31" name="Street">
+    <column id="66" parent="31" name="Street">
       <Position>1</Position>
       <DataType>nvarchar(25)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="56" parent="31" name="PK__Street__EDE2273A9DFD50DA">
+    <index id="67" parent="31" name="PK__Street__EDE2273A9DFD50DA">
       <Position>1</Position>
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Street</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <key id="57" parent="31" name="PK__Street__EDE2273A9DFD50DA">
+    <key id="68" parent="31" name="PK__Street__EDE2273A9DFD50DA">
       <ObjectId>357576312</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2017-04-10.13:41:05.237</CreatedTimestamp>
@@ -275,5 +344,114 @@
       <UnderlyingIndexName>PK__Street__EDE2273A9DFD50DA</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
+    <column id="69" parent="32" name="name">
+      <Position>1</Position>
+      <DataType>sysname|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="70" parent="32" name="principal_id">
+      <Position>2</Position>
+      <DataType>int|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="71" parent="32" name="diagram_id">
+      <Position>3</Position>
+      <DataType>int|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="72" parent="32" name="version">
+      <Position>4</Position>
+      <DataType>int|0</DataType>
+    </column>
+    <column id="73" parent="32" name="definition">
+      <Position>5</Position>
+      <DataType>varbinary|0</DataType>
+    </column>
+    <index id="74" parent="32" name="PK__sysdiagr__C2B05B619CE98A01">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>diagram_id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="75" parent="32" name="UK_principal_name">
+      <Position>2</Position>
+      <ColNames>principal_id
+name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="76" parent="32" name="PK__sysdiagr__C2B05B619CE98A01">
+      <ObjectId>597577167</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-04-21.13:19:50.103</CreatedTimestamp>
+      <ModifiedTimestamp>2017-04-21.13:19:50.103</ModifiedTimestamp>
+      <ColNames>diagram_id</ColNames>
+      <UnderlyingIndexName>PK__sysdiagr__C2B05B619CE98A01</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="77" parent="32" name="UK_principal_name">
+      <ObjectId>613577224</ObjectId>
+      <CreatedTimestamp>2017-04-21.13:19:50.107</CreatedTimestamp>
+      <ModifiedTimestamp>2017-04-21.13:19:50.107</ModifiedTimestamp>
+      <ColNames>principal_id
+name</ColNames>
+      <UnderlyingIndexName>UK_principal_name</UnderlyingIndexName>
+    </key>
+    <argument id="78" parent="33">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>int|0</DataType>
+    </argument>
+    <argument id="79" parent="34" name="@diagramname">
+      <DataType>sysname|0</DataType>
+    </argument>
+    <argument id="80" parent="34" name="@owner_id">
+      <DataType>int|0</DataType>
+    </argument>
+    <argument id="81" parent="34" name="@version">
+      <DataType>int|0</DataType>
+    </argument>
+    <argument id="82" parent="34" name="@definition">
+      <DataType>varbinary|0</DataType>
+    </argument>
+    <argument id="83" parent="35" name="@diagramname">
+      <DataType>sysname|0</DataType>
+    </argument>
+    <argument id="84" parent="35" name="@owner_id">
+      <DataType>int|0</DataType>
+    </argument>
+    <argument id="85" parent="35" name="@version">
+      <DataType>int|0</DataType>
+    </argument>
+    <argument id="86" parent="35" name="@definition">
+      <DataType>varbinary|0</DataType>
+    </argument>
+    <argument id="87" parent="36" name="@diagramname">
+      <DataType>sysname|0</DataType>
+    </argument>
+    <argument id="88" parent="36" name="@owner_id">
+      <DataType>int|0</DataType>
+    </argument>
+    <argument id="89" parent="37" name="@diagramname">
+      <DataType>sysname|0</DataType>
+    </argument>
+    <argument id="90" parent="37" name="@owner_id">
+      <DataType>int|0</DataType>
+    </argument>
+    <argument id="91" parent="38" name="@diagramname">
+      <DataType>sysname|0</DataType>
+    </argument>
+    <argument id="92" parent="38" name="@owner_id">
+      <DataType>int|0</DataType>
+    </argument>
+    <argument id="93" parent="39" name="@diagramname">
+      <DataType>sysname|0</DataType>
+    </argument>
+    <argument id="94" parent="39" name="@owner_id">
+      <DataType>int|0</DataType>
+    </argument>
+    <argument id="95" parent="39" name="@new_diagramname">
+      <DataType>sysname|0</DataType>
+    </argument>
   </database-model>
 </dataSource>

@@ -14,5 +14,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: com.microsoft.sqlserver:mssql-jdbc:6.1.6.jre8-preview" level="project" />
+    <orderEntry type="library" name="mavenInt-1.0-SNAPSHOT" level="project" />
   </component>
 </module>
